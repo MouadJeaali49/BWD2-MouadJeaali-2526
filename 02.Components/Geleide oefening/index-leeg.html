@@ -28,19 +28,19 @@
 
     <!-- TODO: Bootstrap breadcrumb -->
     <section class="container mt-3">
-        <nav class="">
+        <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li>Home / </li>
-                <li>Over ons /</li>
-                <li>contact</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Over ons</a></li>
+                <li class="breadcrumb-item active" aria-current="page">contact</li>
             </ol>
         </nav>
 
     </section>
 
     <!-- TODO: Bootstrap alert -->
-    <section>
-        <p>
+    <section class="container">
+        <p class="alert alert-success" role="alert">
             Hoera! De pagina is geladen zonder errors.
             (Dat is al meer dan je vorige project.)
         </p>
@@ -48,52 +48,73 @@
 
     <!-- TODO: Drie Bootstrap cards -->
     <section class="container mt-4" id="kaarten">
-        
+
 
         <div class="row g-4">
-            <div>
-                <h5>Wat doen we? <span class="badge bg-secondary">Info</span></h5>
-                <p>
-                    Wij bouwen websites die er zo professioneel uitzien
-                    dat zelfs je oma denkt dat je een “echte programmeur” bent.
-                </p>
-                <a href="#" class="btn btn-primary" >Toon magie</a>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5>Wat doen we? <span class="badge bg-secondary">Info</span></h5>
+                        <p>
+                            Wij bouwen websites die er zo professioneel uitzien
+                            dat zelfs je oma denkt dat je een “echte programmeur” bent.
+                        </p>
+                        <a href="#" class="btn btn-primary">Toon magie</a>
+                    </div>
+                </div>
             </div>
-    
-            <div>
-                <h5>Voor wie is dit? <span class="badge bg-secondary">Info</span></h5>
-                <p>
-                    Voor studenten die net ontdekt hebben dat HTML géén
-                    programmeertaal is… maar we zeggen niets tegen de anderen.
-                </p>
-                <a href="#" class="btn btn-primary">Auw, mijn ego</a>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5>Voor wie is dit? <span class="badge bg-secondary">Info</span></h5>
+                        <p>
+                            Voor studenten die net ontdekt hebben dat HTML géén
+                            programmeertaal is… maar we zeggen niets tegen de anderen.
+                        </p>
+                        <a href="#" class="btn btn-primary">Auw, mijn ego</a>
+                    </div>
+                </div>
             </div>
-    
-            <div>
-                <h5>Waarom Bootstrap? <span class="badge bg-secondary">Info</span></h5>
-                <p>
-                    Omdat zelf CSS schrijven fantastisch is…
-                    tot je één spatie verkeerd zet en alles ontploft.
-                </p>
-                <a href="#" class="btn btn-primary">Red me, Bootstrap</a>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5>Waarom Bootstrap? <span class="badge bg-secondary">Info</span></h5>
+                        <p>
+                            Omdat zelf CSS schrijven fantastisch is…
+                            tot je één spatie verkeerd zet en alles ontploft.
+                        </p>
+                        <a href="#" class="btn btn-primary">Red me, Bootstrap</a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- TODO: Bootstrap accordion -->
-    <section>
-        <h2>Veelgestelde vragen</h2>
+    <section class="container">
+        <div class="accordion">
+            
+                <h2>Veelgestelde vragen</h2>
+            
+            <div class="accordion-item">
+                <h3>Moet ik Bootstrap installeren?</h3>
+            </div>
 
-        <h3>Moet ik Bootstrap installeren?</h3>
-        <p>
-            Nee. Gewoon een linkje kopiëren zoals iedereen op StackOverflow doet.
-        </p>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <p>
+                    Nee. Gewoon een linkje kopiëren zoals iedereen op StackOverflow doet.
+                </p>
+            </div>
 
-        <h3>Wat zijn components?</h3>
-        <p>
-            Components zijn kant-en-klare bouwblokjes die jou er slimmer laten lijken
-            dan je eigenlijk bent.
-        </p>
+            <h3>Wat zijn components?</h3>
+            <p>
+                Components zijn kant-en-klare bouwblokjes die jou er slimmer laten lijken
+                dan je eigenlijk bent.
+            </p>
+        </div>
     </section>
 
     <!-- TODO: Button group -->
