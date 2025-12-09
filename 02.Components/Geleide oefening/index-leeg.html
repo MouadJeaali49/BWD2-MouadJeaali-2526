@@ -13,7 +13,7 @@
 <body>
 
     <!-- TODO: Maak hier een Bootstrap navbar -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light" aria-label="navigatie">
         <div class="container d-flex justify-content-between">
             <span class="navbar-brand fw-bold">Mijn Site</span>
             <a class="nav-link" href="#contact">Contact</a>
@@ -95,51 +95,75 @@
 
     <!-- TODO: Bootstrap accordion -->
     <section class="container">
-        <div class="accordion">
-            
-                <h2>Veelgestelde vragen</h2>
-            
+
+        <h2>Veelgestelde vragen</h2>
+
+        <div class="accordion" id="accordionExample">
+
             <div class="accordion-item">
-                <h3>Moet ik Bootstrap installeren?</h3>
+                <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Moet ik Bootstrap installeren?
+                    </button>
+                </h3>
+
+
+                <div id="collapseOne" class="accordion-collapse collapse show"  data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Nee. Gewoon een linkje kopiëren zoals iedereen op StackOverflow doet.
+                    </div>
+                </div>
             </div>
 
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <p>
-                    Nee. Gewoon een linkje kopiëren zoals iedereen op StackOverflow doet.
-                </p>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Wat zijn components?
+                    </button>
+                </h3>
+
+                <div id="collapseTwo" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Components zijn kant-en-klare bouwblokjes die jou er slimmer laten lijken dan je eigenlijk bent.
+                    </div>
+                </div>
             </div>
 
-            <h3>Wat zijn components?</h3>
-            <p>
-                Components zijn kant-en-klare bouwblokjes die jou er slimmer laten lijken
-                dan je eigenlijk bent.
-            </p>
         </div>
     </section>
 
     <!-- TODO: Button group -->
-    <section>
-        <p>Klik gerust. Ze doen toch niets… maar je voelt je wel bezig.</p>
-        <button>Home</button>
-        <button>Info</button>
-        <button>Contact</button>
+    <section class="py-5">
+
+        <div class="container text-center">
+            <p>Klik gerust. Ze doen toch niets… maar je voelt je wel bezig.</p>
+        
+
+        <div class="btn-group" role="group" >
+            <button type="button" class="btn btn-outline-secondary">Home</button>
+            <button type="button" class="btn btn-outline-secondary">Info</button>
+            <button type="button" class="btn btn-outline-secondary">Contact</button>
+        </div>
+        </div>
+
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="bg-body-tertiary text-secondary-emphasis text-center py-5 ">
         <h2>Contact</h2>
         <p>
             Vragen? Problemen? Crashende webpagina’s?
             Stuur ons een bericht. We doen alsof we het kunnen oplossen.
         </p>
-        <button class="btn btn-primary"> Help mij alstublieft</button>
+        <button class="btn btn-primary" type="button"> Help mij alstublieft</button>
     </section>
 
-    <footer>
-        <small>
+    <footer class="bg-dark text-white py-5 text-center small ">
+        
             © 2025 Mijn Site – Alle rechten voorbehouden.
             (Behalve de bugs. Die mag je houden.)
-        </small>
+        
     </footer>
 
 </body>
