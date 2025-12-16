@@ -33,182 +33,225 @@
   </style>
 </head>
 
-<body>
-  <nav>
-    <div>
-      <a href="index.html"><img src="img/logo.png" alt="Desert Tourism" height="28"></a>
-      <button type="button">
-        <span></span>
+<body class="bg-light">
+
+  <!--Navigatie Bar-->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Desert Tourism" height="28">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+      <div id="nav" class="collapse navbar-collapse justify-content-end ">
+
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="contact.html">Contact</a></li>
         </ul>
-        <a href="index.html#tours">Bekijk tochten</a>
+        <a href="index.html#tours" class="btn btn-warning">Bekijk tochten</a>
       </div>
     </div>
   </nav>
-  <main>
-    <nav>
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li>Contact</li>
+
+  <main class="container my-5">
+
+    <!--BREADCRUMB-->
+    <nav class="mb-4 d-none">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
       </ol>
     </nav>
 
-    <div>
+    <div class="row g-5">
+
       <!-- LEFT: FORM, no card -->
-      <div>
-        <h1>Klaar voor je woestijnavontuur?</h1>
-        <p>Velden met * zijn verplicht. We antwoorden meestal binnen 24 uur.</p>
+      <div class="col-lg-8">
+        <h1 class="mb-2">Klaar voor je woestijnavontuur?</h1>
+        <p class="text-muted mb-4">
+          Velden met * zijn verplicht. We antwoorden meestal binnen 24 uur.
+        </p>
 
-        <form novalidate>
-          <div>
-            <label for="name">Volledige naam *</label>
-            <input type="text" id="name" required>
-            <div>Vul je naam in.</div>
-          </div>
-          <div>
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" placeholder="jij@voorbeeld.be" required>
-            <div>Geef een geldig e-mailadres op.</div>
-          </div>
+        <form class="needs-validation" novalidate>
 
-          <div>
-            <label for="phone">Telefoon</label>
-            <div>
-              <span>+</span>
-              <input type="tel" id="phone" placeholder="Landcode + nummer">
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label class="form-label" for="name">Volledige naam *</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Vul je naam in.</div>
             </div>
-          </div>
 
-          <div>
-            <label for="tour">Gewenste tocht</label>
-            <select id="tour">
-              <option selected disabled>Kies je avontuur…</option>
-              <option>Zonsondergang op de Duinen</option>
-              <option>Sterrengids Snelcursus</option>
-              <option>Oase Ontdekking</option>
-              <option>Kameelrace Deluxe</option>
-              <option>Zandstorm Surprise</option>
-              <option>Karavaan & Kampvuur</option>
-            </select>
-          </div>
 
-          <div>
-            <label for="date">Gewenste datum *</label>
-            <input type="date" id="date" required>
-            <div>Kies een datum.</div>
-          </div>
-
-          <div>
-            <label for="people">Aantal personen *</label>
-            <div>
-              <span>👥</span>
-              <input type="number" id="people" min="1" max="20" required>
-              <span>p.</span>
-              <div>Geef een getal tussen 1 en 20.</div>
+            <div class="col-md-6">
+              <label class="form-label" for="email">E-mail *</label>
+              <input type="email" class="form-control" id="email" placeholder="jij@voorbeeld.be" required>
+              <div class="invalid-feedback">Geef een geldig e-mailadres op.</div>
             </div>
-          </div>
 
-          <!-- Budget slider with live badge -->
-          <div>
-            <label for="budget">Budget (per persoon)</label>
-            <div>
-              <span>Min: € 0</span><span>Max: € 2.000</span>
+            <div class="col-md-6">
+              <label class="form-label" for="phone">Telefoon</label>
+              <div class="input-group">
+                <span class="input-group-text">+</span>
+                <input type="tel" class="form-control" id="phone" placeholder="Landcode + nummer">
+              </div>
             </div>
-            <div>
-              <input type="range" min="0" max="2000" step="50" id="budget" value="250">
-              <output id="budgetValue">€ 250</output>
+
+            <div class="col-md-6">
+              <label class="form-label" for="tour">Gewenste tocht</label>
+              <select class="form-select" id="tour">
+                <option selected disabled>Kies je avontuur…</option>
+                <option>Zonsondergang op de Duinen</option>
+                <option>Sterrengids Snelcursus</option>
+                <option>Oase Ontdekking</option>
+                <option>Kameelrace Deluxe</option>
+                <option>Zandstorm Surprise</option>
+                <option>Karavaan & Kampvuur</option>
+              </select>
             </div>
-            <div>Schuif tot het ongeveer goed voelt — het is de woestijn, geen spreadsheet 😉.</div>
-          </div>
 
-          <div>
-            <label for="message">Bericht *</label>
-            <textarea id="message" rows="4" required placeholder="Vertel ons over je plannen... (we lezen graag wilde ideeën)"></textarea>
-            <div>Schrijf even een kort bericht.</div>
-          </div>
-
-          <div>
-            <label>Contactvoorkeur</label>
-            <div>
-              <input type="radio" name="contactPref" id="cp1" checked>
-              <label for="cp1">E-mail</label>
+            <div class="col-md-6">
+              <label class="form-label" for="date">Gewenste datum *</label>
+              <input class="form-control" type="date" id="date" required>
+              <div class="invalid-feedback">Kies een datum.</div>
             </div>
-            <div>
-              <input type="radio" name="contactPref" id="cp2">
-              <label for="cp2">Telefoon</label>
+
+            <div class="col-md-6">
+              <label class="form-label" for="people">Aantal personen *</label>
+              <div class="input-group">
+                <span class="input-group-text">👥</span>
+                <input type="number" class="form-control" id="people" min="1" max="20" required>
+                <span class="input-group-text">p.</span>
+                <div class="invalid-feedback">Geef een getal tussen 1 en 20.</div>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <label for="datalist">Hoe heb je ons gevonden?</label>
-            <input list="sources" id="datalist" placeholder="Typ om te zoeken...">
-            <datalist id="sources">
-              <option value="Vriend">
-              <option value="Social media">
-              <option value="Reisblog">
-              <option value="Anders">
-            </datalist>
-          </div>
+            <!-- Budget slider with live badge -->
+            <div class="col-12">
+              <label class="form-label" for="budget">Budget (per persoon)</label>
 
-          <div>
-            <div>
-              <input type="checkbox" value="" id="terms" required>
-              <label for="terms">Ik ga akkoord met de voorwaarden *</label>
-              <div>Akkoord gaan is verplicht.</div>
+              <div class="d-flex justify-content-between small text-muted mb-1">
+                <span>Min: € 0</span>
+                <span>Max: € 2.000</span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3">
+                <input type="range" class="form-range" min="0" max="2000" step="50" id="budget" value="250">
+                <output class="badge bg-warning text-dark" id="budgetValue">€ 250</output>
+              </div>
+
+              <div class="form-text">
+                Schuif tot het ongeveer goed voelt — het is de woestijn, geen spreadsheet 😉.
+              </div>
             </div>
-          </div>
 
-          <div>
-            <button type="submit">Avontuur starten 🚀</button>
-            <button type="reset">Leegmaken</button>
+            <div class="col-12">
+              <label class="form-label" for="message">Bericht *</label>
+              <textarea class="form-control" id="message" rows="4" required placeholder="Vertel ons over je plannen... (we lezen graag wilde ideeën)"></textarea>
+              <div class="invalid-feedback">Schrijf even een kort bericht.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Contactvoorkeur</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="contactPref" id="cp1" checked>
+                <label class="form-check-label" for="cp1">E-mail</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="contactPref" id="cp2">
+                <label class="form-check-label" for="cp2">Telefoon</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="datalist">Hoe heb je ons gevonden?</label>
+              <input class="form-control" list="sources" id="datalist" placeholder="Typ om te zoeken...">
+              <datalist id="sources">
+                <option value="Vriend">
+                <option value="Social media">
+                <option value="Reisblog">
+                <option value="Anders">
+              </datalist>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                <label class="form-check-label" for="terms">
+                  Ik ga akkoord met de voorwaarden *
+                </label>
+                <div class="invalid-feedback">Akkoord gaan is verplicht.</div>
+              </div>
+            </div>
+
+            <div class="col-12 d-flex gap-2">
+              <button class="btn btn-warning" type="submit">Avontuur starten 🚀</button>
+              <button type="reset" class="btn btn-outline-secondary">Leegmaken</button>
+            </div>
+
           </div>
         </form>
       </div>
 
       <!-- RIGHT: info + small map/photo -->
-      <aside>
-        <div>
-          <h2>Kantoor</h2>
-          <p>Sahara Road 10</p>
-          <p>Merzouga, Marokko</p>
-          <p>+212 555 11 22 33</p>
-          <p>hello@desert.tours</p>
-        </div>
+      <aside class="col-lg-4">
 
-        <div>
-          <div>
-            <h2>Praktisch</h2>
-            <span>7/7</span>
-          </div>
-          <div>
-            <button type="button">
-              Antwoordtijd
-            </button>
-            <span tabindex="0">
-              <button type="button" disabled style="pointer-events: none;">Uren</button>
-            </span>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Kantoor</h5>
+            <p class="mb-0">Sahara Road 10</p>
+            <p class="mb-0">Merzouga, Marokko</p>
+            <p class="mb-0">+212 555 11 22 33</p>
+            <p class="mb-0">hello@desert.tours</p>
           </div>
         </div>
 
-        <div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="mb-0">Praktisch</h5>
+              <span class="badge bg-warning text-dark">7/7</span>
+            </div>
+
+
+            <div class="btn-group ">
+              <button class="btn btn-outline-secondary rounded" type="button">Antwoordtijd</button>
+              <span tabindex="0">
+                <button class="btn btn-outline-secondary" type="button">Uren</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
           <img src="img/photo1.jpg" alt="Kaart / sfeerbeeld" style="width:100%; height:180px; object-fit:cover;">
         </div>
+
       </aside>
     </div>
 
-    <footer>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-      <p>© Desert Tourism</p>
-    </footer>
   </main>
+
+  <!--FOOTER-->
+  <footer class="border-top py-4 ">
+    <div class="container text-center small">
+      <ul class="nav justify-content-center mb-2">
+        <li class="nav-item"><a class="nav-link text-muted" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-muted" href="#">Privacy</a></li>
+      </ul>
+    </div>
+    <p class="text-muted text-center small">© Desert Tourism</p>
+
+  </footer>
+
 
 </body>
 
