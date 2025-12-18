@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ToyBench Pro — Speelgoedwinkel</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div role="alert">
+    Najaarspromo 🍂 — gratis verzending vanaf € 49.
+  </div>
+  <nav>
+    <div>
+      <a href="#">
+        <img alt="ToyBench Pro" height="28" src="img/toybench-pro-light.svg">
+      </a>
+      <div id="navMain">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Shop</a>
+            <ul>
+              <li><a href="#">Alle speelgoed</a></li>
+              <li><a href="#">Voertuigen</a></li>
+              <li><a href="#">Pluche</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a href="#">Cadeaubonnen</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="register.html">Registratie</a></li>
+        </ul>
+        <form role="search">
+          <input placeholder="Zoeken" type="search">
+          <button type="submit">Zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="heroCarousel">
+      <div>
+        <div>
+          <img alt="Brandweerwagen" src="img/fire-truck.jpg">
+          <div>
+            <h1>Tijdloos speelgoed</h1>
+            <p>Veilig, duurzaam en klaar voor avontuur.</p>
+          </div>
+        </div>
+        <div>
+          <img alt="Loopfiets" src="img/bicycle-bronze.jpg">
+          <div>
+            <h2>Klassieke loopfietsen</h2>
+            <p>Stevig design voor uren rijplezier.</p>
+          </div>
+        </div>
+        <div>
+          <img alt="Teddy met koffer" src="img/teddy-luggage.jpg">
+          <div>
+            <h2>Knuffels voor onderweg</h2>
+            <p>Altijd een maatje bij de hand.</p>
+          </div>
+        </div>
+      </div>
+      <button type="button">
+        <span>Vorige</span>
+      </button>
+      <button type="button">
+        <span>Volgende</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <nav>
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Speelgoed</a></li>
+        <li>Aanbevolen</li>
+      </ol>
+    </nav>
+    <div>
+      <aside>
+        <div>
+          <div>
+            <div>Categorieën</div>
+            <div>
+              <a href="#">
+                Voertuigen <span>11</span>
+              </a>
+              <a href="#">Pluche</a>
+              <a href="#">Bouw &amp; puzzel</a>
+              <a href="#">Overig</a>
+            </div>
+          </div>
+          <div id="filterAccordion">
+            <div>
+              <h2 id="f1">
+                <button type="button">
+                  Leeftijd
+                </button>
+              </h2>
+              <div id="fc1">
+                <div>
+                  <div><input id="l1" type="checkbox"><label for="l1">0–2 jaar</label></div>
+                  <div><input id="l2" type="checkbox"><label for="l2">3–5 jaar</label></div>
+                  <div><input id="l3" type="checkbox"><label for="l3">6+ jaar</label></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 id="f2">
+                <button type="button">
+                  Merk
+                </button>
+              </h2>
+              <div id="fc2">
+                <div>
+                  <div><input id="m1" type="checkbox"><label for="m1">ToyBench</label></div>
+                  <div><input id="m2" type="checkbox"><label for="m2">ClassicPlay</label></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 id="f3">
+                <button type="button">
+                  Prijs
+                </button>
+              </h2>
+              <div id="fc3">
+                <div>
+                  <div><input id="p1" name="prijs" type="radio"><label for="p1">&lt; € 20</label></div>
+                  <div><input id="p2" name="prijs" type="radio"><label for="p2">€ 20 – € 50</label></div>
+                  <div><input id="p3" name="prijs" type="radio"><label for="p3">&gt; € 50</label></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 id="f4">
+                <button type="button">
+                  Thema
+                </button>
+              </h2>
+              <div id="fc4">
+                <div>
+                  <div><input id="t1" type="checkbox"><label for="t1">Avontuur</label></div>
+                  <div><input id="t2" type="checkbox"><label for="t2">Educatief</label></div>
+                  <div><input id="t3" type="checkbox"><label for="t3">Creatief</label></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#shippingInfo">
+              Toon leveringsinfo
+            </a>
+            <div id="shippingInfo">
+              <div>
+                Gratis verzending vanaf € 49. Levertijd 1–3 werkdagen.
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div>
+          <div>
+            <div>
+              <div>
+                <img alt="Brandweerwagen" src="img/fire-truck.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Brandweerwagen</h3>
+                  <span>Nieuw</span>
+                </div>
+                <p>Sirenes niet inbegrepen, fantasie wel! Robuuste wagen met uitschuifladder.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 24,90</span>
+                <small>Voorraad: 12</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Koperen loopfiets" src="img/bicycle-bronze.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Koperen loopfiets</h3>
+                  <span>Bestseller</span>
+                </div>
+                <p>Balanceer als een pro — de eerste kilometers tel je met een glimlach.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 89,00</span>
+                <small>Voorraad: 5</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Teddy met koffer" src="img/teddy-luggage.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Teddy met koffer</h3>
+                  <span>Op voorraad</span>
+                </div>
+                <p>Reismaatje met extra knuffelkrediet. Past in elke rugzak.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 18,50</span>
+                <small>Voorraad: 21</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Draaispin" src="img/toy-spinner.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Draaispin</h3>
+                  <span>Deal</span>
+                </div>
+                <p>Zakformaat turbo-plezier. Voor fidget-fans en rustzoekers.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 6,95</span>
+                <small>Voorraad: 55</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Mint Pony Figure" src="img/pony-mint-figure.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Mint Pony Figure</h3>
+                  <span>Nieuw</span>
+                </div>
+                <p>Kleurrijk vriendje met megagrote ogen. Galoppeert richting speelkamer.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 9,90</span>
+                <small>Voorraad: 30</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Sardineblik Auto" src="img/sardine-car.webp">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Sardineblik Auto</h3>
+                  <span>Limited</span>
+                </div>
+                <p>Upcycle-magie op wieltjes. Retro charme, houten asjes — vroom!</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 14,50</span>
+                <small>Voorraad: 9</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Houten pony op wielen" src="img/wooden-pony.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Houten pony op wielen</h3>
+                  <span>Aanrader</span>
+                </div>
+                <p>Nostalgisch trekdiertje. Gemaakt voor rondjes door de woonkamer.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 16,95</span>
+                <small>Voorraad: 14</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Dinky Citroën DS" src="img/dinky-citroen.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Dinky Citroën DS</h3>
+                  <span>Collector</span>
+                </div>
+                <p>Kleine klassieker, grote stijl. Parkeer hem trots op de boekenplank.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 39,00</span>
+                <small>Voorraad: 3</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="Play-Doh Mini’s" src="img/play-doh.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>Play-Doh Mini’s</h3>
+                  <span>Creatief</span>
+                </div>
+                <p>Kneden, rollen, lachen. De kleurenmix die nooit verveelt.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 7,50</span>
+                <small>Voorraad: 60</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="View-Master" src="img/view-master.png">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>View-Master</h3>
+                  <span>Retro</span>
+                </div>
+                <p>Klik, *woah!* — 3D-plaatjes zoals vroeger. Tijdreizen met een hendeltje.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 19,90</span>
+                <small>Voorraad: 11</small>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img alt="LEGO® Mix" src="img/lego-bricks.jpg">
+                <button type="button">
+                  <svg viewbox="0 0 24 24">
+                    <path
+                      d="M12 21s-7.5-4.35-9.5-8.5C1.3 9.6 3 6 6.5 6 8.6 6 10 7.4 12 9.5 14 7.4 15.4 6 17.5 6 21 6 22.7 9.6 21.5 12.5 19.5 16.65 12 21 12 21z">
+                    </path>
+                  </svg>
+                  <span>Favoriet</span>
+                </button>
+              </div>
+              <div>
+                <div>
+                  <h3>LEGO® Mix</h3>
+                  <span>Bouwpret</span>
+                </div>
+                <p>Een regenboog aan steentjes. Bouw je eigen miniwereld.</p>
+                <div>
+                  <button>Details</button>
+                  <button title="In winkelmand" type="button">
+                    <svg viewbox="0 0 16 16">
+                      <path
+                        d="M0 1h2l.4 2H16l-2 7H4L3.2 5H1.1L0 1zm5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span>€ 12,95</span>
+                <small>Voorraad: 100</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><span>Vorige</span></li>
+            <li><a href="#">1</a></li>
+            <li><span>2</span></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Volgende</a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <section id="faq">
+      <h2>Veelgestelde vragen</h2>
+      <div id="faqAcc">
+        <div>
+          <h2 id="q1">
+            <button type="button">
+              Is het speelgoed veilig?
+            </button>
+          </h2>
+          <div id="a1">
+            <div>
+              Ja. Al onze producten voldoen aan de Europese speelgoedrichtlijn (EN 71) en zijn CE-gekeurd.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 id="q2">
+            <button type="button">
+              Hoe werkt verzending en levering?
+            </button>
+          </h2>
+          <div id="a2">
+            <div>
+              Bestellingen vóór 22:00 worden dezelfde werkdag verwerkt. Levering in 1–3 werkdagen, gratis vanaf € 49.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 id="q3">
+            <button type="button">
+              Kan ik retourneren of ruilen?
+            </button>
+          </h2>
+          <div id="a3">
+            <div>
+              Je kunt binnen 30 dagen kosteloos retourneren mits onbeschadigd en in originele verpakking. Ruilen kan via
+              ons retourportaal.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 id="q4">
+            <button type="button">
+              Vanaf welke leeftijd zijn de producten geschikt?
+            </button>
+          </h2>
+          <div id="a4">
+            <div>
+              Elk product heeft een aanbevolen minimumleeftijd. Let op kleine onderdelen voor kinderen jonger dan 3
+              jaar.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 id="q5">
+            <button type="button">
+              Hoe zit het met garantie?
+            </button>
+          </h2>
+          <div id="a5">
+            <div>
+              Wettelijke garantie van 2 jaar op fabricagefouten. Neem contact op met support voor afhandeling.
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 id="q6">
+            <button type="button">
+              Kan ik een cadeaubericht toevoegen?
+            </button>
+          </h2>
+          <div id="a6">
+            <div>
+              Ja. Tijdens het afrekenen kun je een gratis boodschap toevoegen. Cadeauverpakking is mogelijk.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Over</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>© 2025 ToyBench</p>
+    </footer>
+  </main>
+</body>
+
+</html>

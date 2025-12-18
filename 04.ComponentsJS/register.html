@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ToyBench Pro — Registratie</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div role="alert">
+    Word lid van <strong>ToyBench Pro</strong> en ontvang 10% welkomstkorting.
+  </div>
+  <nav>
+    <div>
+      <a href="index.html">
+        <img alt="ToyBench Pro" height="28" src="img/toybench-pro-light.svg">
+      </a>
+      <div id="navMain">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">Shop</a>
+            <ul>
+              <li><a href="#">Alle speelgoed</a></li>
+              <li><a href="#">Voertuigen</a></li>
+              <li><a href="#">Pluche</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a href="#">Cadeaubonnen</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="register.html">Registratie</a></li>
+        </ul>
+        <form>
+          <input placeholder="Zoeken" type="search">
+          <button type="submit">Zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <nav>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Registratie</li>
+      </ol>
+    </nav>
+    <div>
+      <div>
+        <div>
+          <div>
+            <h1>Maak jouw ToyBench Pro-account</h1>
+            <small>Velden met * zijn verplicht.</small>
+          </div>
+          <div>
+
+            <form>
+              <!-- ACCOUNT -->
+              <div>
+                <h2>Account</h2>
+              </div>
+              <div>
+                <label for="email">E-mailadres *</label>
+                <input id="email" placeholder="naam@voorbeeld.be" type="email">
+                <div>Geef een geldig e-mailadres op.</div>
+              </div>
+              <div>
+                <label for="username">Gebruikersnaam *</label>
+                <div>
+                  <span id="userprefix">@</span>
+                  <input id="username" type="text">
+                  <button type="button">Beschikbaar?</button>
+                  <div>Kies een gebruikersnaam.</div>
+                </div>
+                <div>Enkel letters, cijfers en underscores.</div>
+              </div>
+              <div>
+                <label for="pwd">Wachtwoord *</label>
+                <input id="pwd" minlength="8" type="password">
+                <div>Minstens 8 tekens. Gebruik bij voorkeur een zin.</div>
+                <div>Te kort: minstens 8 tekens.</div>
+              </div>
+              <div>
+                <label for="pwd2">Herhaal wachtwoord *</label>
+                <input id="pwd2" type="password">
+                <div>Herhaal je wachtwoord.</div>
+              </div>
+              <!-- PERSOONLIJK -->
+              <div>
+                <h2>Persoonlijk</h2>
+              </div>
+              <div>
+                <label for="firstName">Voornaam *</label>
+                <input id="firstName" type="text">
+                <div>Voornaam is verplicht.</div>
+              </div>
+              <div>
+                <label for="lastName">Achternaam *</label>
+                <input id="lastName" type="text">
+                <div>Achternaam is verplicht.</div>
+              </div>
+              <div>
+                <label for="birth">Geboortedatum</label>
+                <input id="birth" type="date">
+              </div>
+              <div>
+                <label for="phone">Telefoon</label>
+                <div>
+                  <span>+32</span>
+                  <input id="phone" placeholder="04..." type="tel">
+                </div>
+                <div>We gebruiken dit alleen voor leveringsupdates.</div>
+              </div>
+              <div>
+                <label for="website">Website (optioneel)</label>
+                <div>
+                  <span>https://</span>
+                  <input id="website" placeholder="voorbeeld.be" type="text">
+                </div>
+              </div>
+              <!-- ADRES -->
+              <div>
+                <h2>Adres</h2>
+              </div>
+              <div>
+                <label for="street">Straat &amp; nr. *</label>
+                <input id="street" type="text">
+                <div>Vul je straat en nummer in.</div>
+              </div>
+              <div>
+                <label for="bus">Bus</label>
+                <input id="bus" placeholder="bvb. bus 2" type="text">
+              </div>
+              <div>
+                <label for="zip">Postcode *</label>
+                <input id="zip" pattern="\d{4}" type="text">
+                <div>Geef een geldige postcode (4 cijfers).</div>
+              </div>
+              <div>
+                <label for="city">Gemeente *</label>
+                <input id="city" type="text">
+                <div>Gemeente is verplicht.</div>
+              </div>
+              <div>
+                <label for="country">Land *</label>
+                <select id="country">
+                  <option>Kies...</option>
+                  <option>België</option>
+                  <option>Nederland</option>
+                  <option>Duitsland</option>
+                  <option>Frankrijk</option>
+                </select>
+                <div>Kies je land.</div>
+              </div>
+              <!-- PREFERENTIES -->
+              <div>
+                <h2>Voorkeuren</h2>
+              </div>
+              <div>
+                <label for="favCat">Favoriete categorie</label>
+                <select id="favCat">
+                  <option>Voertuigen</option>
+                  <option>Pluche</option>
+                  <option>Bouw &amp; puzzel</option>
+                  <option>Creatief</option>
+                </select>
+              </div>
+              <div>
+                <label for="themes">Interesses (meervoud)</label>
+                <select id="themes" size="4">
+                  <option>Avontuur</option>
+                  <option>Educatief</option>
+                  <option>Creatief</option>
+                  <option>Retro</option>
+                </select>
+                <div>Houd Ctrl/Cmd ingedrukt om meerdere te selecteren.</div>
+              </div>
+              <div>
+                <label for="color">Kleuraccent</label>
+                <input id="color" title="Kies je accentkleur" type="color" value="#ffd166">
+              </div>
+              <div>
+                <label for="range">Nieuwsbrief frequentie</label>
+                <input id="range" max="10" min="0" type="range">
+                <div><span>0 = zelden</span><span>10 = vaak</span></div>
+              </div>
+              <div>
+                <label for="datalistOptions">Favoriet merk</label>
+                <input id="brand" list="datalistOptions" placeholder="Begin te typen...">
+                <datalist id="datalistOptions">
+                  <option value="ToyBench"></option>
+                  <option value="ClassicPlay"></option>
+                  <option value="BrickCo"></option>
+                  <option value="PlushWorks"></option>
+                </datalist>
+              </div>
+              <div>
+                <label for="avatar">Profielfoto (optioneel)</label>
+                <input accept=".jpg,.png" id="avatar" type="file">
+                <div>JPG of PNG, max 5MB.</div>
+              </div>
+              <div>
+                <div>
+                  <input id="switchDark" type="checkbox">
+                  <label for="switchDark">Donker thema gebruiken</label>
+                </div>
+              </div>
+              <!-- FACTURATIE (collapse demo) -->
+              <div>
+                <div>
+                  <input id="invoiceToggle" type="checkbox">
+                  <label for="invoiceToggle">
+                    Zakelijke facturatiegegevens toevoegen
+                  </label>
+                </div>
+                <div id="invoiceArea">
+                  <div>
+                    <div>
+                      <label for="company">Bedrijfsnaam</label>
+                      <input id="company" type="text">
+                    </div>
+                    <div>
+                      <label for="vat">BTW-nummer</label>
+                      <div>
+                        <span>BE</span>
+                        <input id="vat" placeholder="0123.456.789" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TOEGANKELIJKHEID / OVERIG -->
+              <div>
+                <h2>Overig</h2>
+              </div>
+              <div>
+                <label>Contactvoorkeur</label>
+                <div>
+                  <input id="c1" name="contact" type="radio">
+                  <label for="c1">E-mail</label>
+                </div>
+                <div>
+                  <input id="c2" name="contact" type="radio">
+                  <label for="c2">Telefoon</label>
+                </div>
+              </div>
+              <div>
+                <label>Afspraken</label>
+                <div>
+                  <input id="terms" type="checkbox" value="">
+                  <label for="terms">Ik accepteer de algemene voorwaarden *</label>
+                  <div>Je moet akkoord gaan.</div>
+                </div>
+                <div>
+                  <input id="promo" type="checkbox" value="">
+                  <label for="promo">Ontvang acties &amp; nieuws</label>
+                </div>
+              </div>
+              <!-- PLAIN TEXT / READONLY DEMO -->
+              <div>
+                <label>Jouw klantnummer</label>
+                <input type="text" value="Wordt toegewezen na registratie">
+              </div>
+              <!-- KNOPPEN -->
+              <div>
+                <button type="submit">Account aanmaken</button>
+                <button type="reset">Leegmaken</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <!-- Snelle tips / help -->
+        <div id="hulp">
+          <div>Tips</div>
+          <div>
+            <div>Gebruik een uniek wachtwoord.</div>
+            <div>Leveradres = factuuradres? Laat de collapse dicht.</div>
+            <div>Meerdere interesses? Gebruik de multiselect.</div>
+          </div>
+        </div>
+        <!-- Popover & tooltip placeholders (geen JS init) -->
+        <div>
+          <div>
+            <button type="button">
+              Privacy
+            </button>
+            <span tabindex="0">
+              <button type="button">Tooltip</button>
+            </span>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Voorwaarden</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+      <p>© 2025 ToyBench</p>
+    </footer>
+  </main>
+</body>
+
+</html>
